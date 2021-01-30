@@ -369,8 +369,8 @@ class MainGUI:
         try:
             self.curImage = MainGUI.__getNewestImg()
             self.imageLabel.config(image=self.curImage)
-        except:
-            pass
+        except Exception as e:
+            print(e)
 
     # 更新文字信息
     def updateTextInfo(self, eventName, **kwargs):
