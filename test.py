@@ -1,17 +1,19 @@
-import math
 import time
 
-from wzryProxy import tryBtnTap, adbDevice, doTryTapAction, recognitionImg
+from device import DeviceEmulator
 
 if __name__ == '__main__':
-    # tryBtnTap(btnName = 'duizhan', stage='main') # 对战
-    # tryBtnTap(btnName = 'duizhan') # 对战
-    # tryBtnTap('chuangguan')  # 闯关
-    # tryBtnTap('baohujinshai')  # 闯关
+    device = DeviceEmulator()
+    # device.tryBtnTap(btnName = 'duizhan', stage='main') # 对战
+    # device.tryBtnTap(btnName = 'duizhan') # 对战
+    # device.tryBtnTap('chuangguan')  # 闯关
+    # device.tryBtnTap('baohujinshai')  # 闯关
 
-    # doTryTapAction('maoxianlgyzLevel_1_case')
-    # doTryTapAction('okBtnYellow')
-    adbDevice.cutScreen()
-    # print(recognitionImg('clickcontinue2'))
-    # tryBtnTap('maoxianliuguoyuanzheng')
+    # device.doTryTapAction('maoxianlgyzLevel_1_case')
+    # device.doTryTapAction('okBtnYellow')
+    device.screenshot() # 截屏
+    # print(device.recognitionImg('clickcontinue2'))
+    # device.tryBtnTap('maoxianliuguoyuanzheng')
+
+
 
