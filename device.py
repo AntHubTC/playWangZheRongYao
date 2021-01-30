@@ -93,6 +93,8 @@ class DeviceEmulator(EventObservable):
             recognitionResult = ac.find_template(imsrc, imobj)
 
             self.tiggerEvent('recognitionImg', target=self)
+        except Exception as e:
+            print(e)
         finally:
             self.acLock.release()
         return recognitionResult
