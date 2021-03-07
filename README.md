@@ -1,5 +1,7 @@
 # 王者荣耀辅助助手
 
+<span style="font-weight:bold;color:red;font-size:22px">提示：仅限于学习自动化使用！</span>
+
 解放双手打资源，实现3个目标：
 * 刷金币
 * 刷经验
