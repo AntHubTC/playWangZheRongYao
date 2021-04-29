@@ -1,2 +1,4 @@
+opencv-python
+Pillow
 aircv
 numpy
